@@ -17,7 +17,7 @@ public class DesignPizzaController {
 
     private PizzaRepository pizzaRepository;
 
-    @GetMapping
+    @GetMapping //localhost:8080/design
     public String showDesignForm(Model model) {
 
         model.addAttribute("pizza", new Pizza());
@@ -30,7 +30,7 @@ public class DesignPizzaController {
 
     }
 
-    @PostMapping("/createPizza")
+    @PostMapping("/createPizza") //localhost:8080/design/createPizza
     public String processPizza(Pizza pizza) {
 
         pizza.setId(UUID.randomUUID());
