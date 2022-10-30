@@ -50,4 +50,9 @@ public class OrderController {
 
     }
 
+    //pizzaOrder.setName("asd");
+    //pizzaOrder.setPizza(null); Note:If there is no field in the form, this will run.
+
+
+
 }
